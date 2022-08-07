@@ -15,8 +15,6 @@ app.set('views',static_path);
 app.set('view engine', 'ejs');
 
 
-
-
 let seatno = 2208081;
 
 let arr2 = []
@@ -43,8 +41,11 @@ arr2.forEach((value,index)=>{
         //  console.dir(arr[4].slice(67,arr[4].length-5));
         //  console.dir(arr[18].slice(73,arr[18].length-12));
 
-         arr3.push([arr[4].slice(67,arr[4].length-5),arr[18].slice(73,arr[18].length-12)]);
+        let str = arr[4].slice(67,arr[4].length-5);
+        let num = (arr[18].slice(73,arr[18].length-12)).toString();
 
+         arr3.push([num,str]);
+         arr3.sort();
         })
     })
 
