@@ -46,6 +46,7 @@ arr2.forEach((value,index)=>{
 
          arr3.push([num,str]);
          arr3.sort();
+         arr3.reverse();
         })
     })
 
